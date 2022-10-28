@@ -21,4 +21,3 @@ Functions
   * Paginates and writes PNGs from INPUT_FILE to OUTPUT_DIR
 * `ocr`
   * Generates text mapping for INPUT_FILE and writes out to OUTPUT_FILE
-  * Unnecessary if PDF has prior OCR
