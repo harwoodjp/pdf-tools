@@ -1,5 +1,3 @@
-import ghostscript
-import subprocess 
 from subprocess import run, PIPE
 
 def split_to_png(input_file, output_dir):

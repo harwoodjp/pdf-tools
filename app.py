@@ -2,6 +2,7 @@ import fire
 
 from functions.extract import extract_text
 from functions.split import split_to_png
+from functions.compress import compress_pdf
 from functions.ocr import ocr_my_pdf
 
 class App:
@@ -17,13 +18,21 @@ class App:
 		except:
 			print("Error occured during split")			
 
+	def compress(self, input_file, output_file):
+		""" Compresses INPUT_FILE and writes OUTPUT_FILE """
+		try:
+			compress_pdf(input_file, output_file)
+			print(f"Compressed {input_file} to {output_file}")
+		except:
+			print("Error occured during compression")			
+
 	def ocr(self, input_file, output_file):
 		""" Generates text mapping for INPUT_FILE and writes out to OUTPUT_FILE """
 		try:
 			ocr_my_pdf(input_file, output_file)
 			print(f"Applied OCR {input_file} to {output_file}")
 		except:
-			print("Error occured during ocr")			
+			print("Error occured during ocr")
 
 if __name__ == "__main__":
 	fire.Fire(App)
