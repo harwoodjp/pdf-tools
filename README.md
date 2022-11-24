@@ -27,7 +27,6 @@ Functions
   * Compresses INPUT_FILE PDF and writes OUTPUT_FILE
 * `ocr`
   * Generates text mapping for INPUT_FILE and writes out to OUTPUT_FILE
-  * Unnecessary if PDF has prior OCR
 
 Recipes
 * When preparing a PDF for the web, the following sequences are recommended:
