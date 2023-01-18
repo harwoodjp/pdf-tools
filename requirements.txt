@@ -1,3 +1,4 @@
 fire
 PyPDF2
 ghostscript
+ocrmypdf
